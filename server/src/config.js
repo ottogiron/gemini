@@ -1,4 +1,4 @@
-'use strict';
+
 
 var Confidence = require('confidence');
 

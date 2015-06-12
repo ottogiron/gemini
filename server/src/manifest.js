@@ -1,4 +1,4 @@
-'use strict';
+
 
 var Confidence = require('confidence');
 var Config = require('./config');
@@ -28,8 +28,8 @@ var manifest = {
             engines: { jade: 'jade' },
             path: './server/web'
         },
-        './api/index': { basePath: '/api' },
-        './web/index': {}
+        './api/index': { basePath: '/api' }
+       
     }
 };
 

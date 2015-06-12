@@ -1,15 +1,16 @@
-'use strict';
-
 var Composer = require('./index');
 
-Composer(function (err, server) {
 
-    if (err) {
-        throw err;
-    }
+module.exports.start = (done) => {
+	Composer(function (err, server) {
 
-    server.start(function () {
+	    if (err) {
+	        throw err;
+	    }
 
-        console.log('Started the plot device on port ' + server.info.port);
-    });
-});
+	    server.start( () => {
+	    	done();
+	        console.log('Started the plot device on port ' + server.info.port);
+	    });
+	});	
+};
