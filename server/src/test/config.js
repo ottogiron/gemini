@@ -1,10 +1,10 @@
+'use strict';
+
 var Lab = require('lab');
 var Code = require('code');
 var Config = require('../config');
 
-
 var lab = exports.lab = Lab.script();
-
 
 lab.experiment('Config', function () {
 
@@ -14,7 +14,6 @@ lab.experiment('Config', function () {
 
         done();
     });
-
 
     lab.test('it gets config meta data', function (done) {
 

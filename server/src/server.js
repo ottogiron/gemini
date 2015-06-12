@@ -1,5 +1,6 @@
-var Composer = require('./index');
+'use strict';
 
+var Composer = require('./index');
 
 Composer(function (err, server) {
 

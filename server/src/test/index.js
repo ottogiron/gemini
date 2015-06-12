@@ -1,10 +1,10 @@
+'use strict';
+
 var Lab = require('lab');
 var Code = require('code');
 var Composer = require('../index');
 
-
 var lab = exports.lab = Lab.script();
-
 
 lab.experiment('App', function () {
 

@@ -1,10 +1,10 @@
-var Confidence = require('confidence');
+'use strict';
 
+var Confidence = require('confidence');
 
 var criteria = {
     env: process.env.NODE_ENV
 };
-
 
 var config = {
     $meta: 'This file configures the plot device.',
@@ -18,15 +18,12 @@ var config = {
     }
 };
 
-
 var store = new Confidence.Store(config);
-
 
 exports.get = function (key) {
 
     return store.get(key, criteria);
 };
-
 
 exports.meta = function (key) {
 

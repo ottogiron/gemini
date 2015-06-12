@@ -1,11 +1,11 @@
+'use strict';
+
 var Confidence = require('confidence');
 var Config = require('./config');
-
 
 var criteria = {
     env: process.env.NODE_ENV
 };
-
 
 var manifest = {
     $meta: 'This file defines the plot device.',
@@ -28,20 +28,17 @@ var manifest = {
             engines: { jade: 'jade' },
             path: './server/web'
         },
-        './server/api/index': { basePath: '/api' },
-        './server/web/index': {}
+        './api/index': { basePath: '/api' },
+        './web/index': {}
     }
 };
 
-
 var store = new Confidence.Store(manifest);
-
 
 exports.get = function (key) {
 
     return store.get(key, criteria);
 };
-
 
 exports.meta = function (key) {
 
