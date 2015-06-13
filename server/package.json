@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "gemini",
   "version": "1.0.0",
   "description": "Web Components based CMS",
@@ -6,6 +7,15 @@
   "scripts": {
     "start": "./node_modules/nodemon/bin/nodemon.js server",
     "test": "./node_modules/lab/bin/lab -c -L",
+=======
+  "name": "node-hapi-seed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js dist/server",
+    "test": "./node_modules/lab/bin/lab dist/test -c",
+>>>>>>> seed/master
     "test-cover": "./node_modules/lab/bin/lab -c -r html -o ./test/artifacts/coverage.html && open ./test/artifacts/coverage.html"
   },
   "repository": {
@@ -15,19 +25,33 @@
   "keywords": [
     ""
   ],
+<<<<<<< HEAD
   "author": "Otto Giron <ottog2486@gmail.com>",
+=======
+  "author": "Otto Giron <otto.giron@gmail.com>",
+>>>>>>> seed/master
   "license": "MIT",
   "bugs": {
     "url": ""
   },
   "homepage": "",
   "dependencies": {
+<<<<<<< HEAD
     "ceibacr": "git://github.com/ottogiron/ceibacr.git",
     "confidence": "^1.x.x",
     "glue": "^2.x.x",
     "hapi": "^8.x.x",
     "hoek": "^2.x.x",
     "jade": "^1.x.x",
+=======
+    "confidence": "^1.x.x",
+    "glue": "^2.x.x",
+    "gulp-traceur": "^0.17.1",
+    "hapi": "^8.x.x",
+    "hoek": "^2.x.x",
+    "jade": "^1.x.x",
+    "require-dir": "^0.3.0",
+>>>>>>> seed/master
     "visionary": "^2.x.x"
   },
   "devDependencies": {
@@ -36,7 +60,11 @@
     "gulp-babel": "^5.1.0",
     "gulp-nodemon": "^2.0.3",
     "lab": "^5.x.x",
+<<<<<<< HEAD
     "nodemon": "^1.x.x",
     "require-dir": "^0.3.0"
+=======
+    "nodemon": "^1.x.x"
+>>>>>>> seed/master
   }
 }
